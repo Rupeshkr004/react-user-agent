@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: react-user-agent-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: react-user-agent
+  minReplicas: 2  # Minimum number of replicas
+  maxReplicas: 5 # Maximum number of replicas
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageUtilization: 70
