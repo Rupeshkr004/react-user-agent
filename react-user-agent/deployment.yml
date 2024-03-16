@@ -17,5 +17,12 @@ spec:
       containers:
       - name: react-user-agent
         image: rupeshrk004/react-user-agent:{{IMAGE_TAG}}
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
         ports:
         - containerPort: 80
