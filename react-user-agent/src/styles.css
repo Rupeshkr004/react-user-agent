@@ -1,0 +1,31 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#d8d4d9;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #707273;
+    margin-left: 50%;
+  }
+  
+  .user-agent {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif   ;
+    color: #707273;
+    margin-top: 10px;
+  }
+  
